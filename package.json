@@ -8,7 +8,9 @@
     "prisma": "node ./node_modules/prisma/build/index.js",
     "prisma:db:push": "yarn run prisma db push",
     "prisma:db:studio": "yarn run prisma studio",
-    "upgrade": "yarn upgrade-interactive"
+    "upgrade": "yarn upgrade-interactive",
+    "generate-types": "nx generate-types jobber-auth",
+    "migrate-prisma": "nx migrate-prisma jobber-auth"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.0",

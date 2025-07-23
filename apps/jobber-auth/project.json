@@ -5,6 +5,18 @@
   "projectType": "application",
   "tags": [],
   "targets": {
+    "generate-types": {
+      "command": "prisma generate",
+      "options": {
+        "cwd": "apps/jobber-auth"
+      }
+    },
+    "migrate-prisma": {
+      "command": "prisma migrate dev",
+      "options": {
+        "cwd": "apps/jobber-auth"
+      }
+    },
     "build": {
       "executor": "nx:run-commands",
       "options": {
@@ -38,18 +50,6 @@
     "test": {
       "options": {
         "passWithNoTests": true
-      }
-    },
-    "generate-types": {
-      "command": "prisma generate",
-      "options": {
-        "cwd": "apps/jobber-auth"
-      }
-    },
-    "migrate": {
-      "command": "prisma migrate dev",
-      "options": {
-        "cwd": "apps/jobber-auth"
       }
     }
   }
