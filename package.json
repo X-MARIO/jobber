@@ -9,6 +9,7 @@
     "prisma:db:push": "yarn run prisma db push",
     "prisma:db:studio": "yarn run prisma studio",
     "upgrade": "yarn upgrade-interactive",
+    "build": "nx build jobber-auth",
     "generate-types": "nx generate-types jobber-auth",
     "migrate-prisma": "nx migrate-prisma jobber-auth"
   },
