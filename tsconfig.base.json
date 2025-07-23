@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@prisma/generated": ["apps/jobber-auth/prisma/generated"],
+      "@prisma/generated/*": ["apps/jobber-auth/prisma/generated/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
